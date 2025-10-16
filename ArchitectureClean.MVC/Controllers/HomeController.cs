@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using ArchitectureClean.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace ArchitectureClean.MVC.Controllers
 {
