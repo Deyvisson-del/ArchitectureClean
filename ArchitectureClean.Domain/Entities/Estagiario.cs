@@ -45,7 +45,6 @@ namespace ArchitectureClean.Domain.Entities
             Status = status;
             Abono = abono;
 
-
         }
 
         public bool verfificarSenha(Senha senha) => Senha.Verificar(senha);
