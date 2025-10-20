@@ -9,7 +9,7 @@ public class Administrador
 
     public Guid Id { get; set; }
 
-    public Email Email { get; private set; }
+    public Email Email { get; private set; } = default!;
 
     public Senha Senha { get; private set; } = default!;
 
@@ -23,5 +23,5 @@ public class Administrador
         Perfil = Perfil;
     }
 
-    public bool verfificarSenha(string senha) => Senha.Verificar(senha);
+    public bool verificarSenha(string senha) => Senha.Verificar(senha);
 }

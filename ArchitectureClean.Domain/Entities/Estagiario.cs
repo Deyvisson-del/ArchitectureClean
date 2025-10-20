@@ -21,32 +21,25 @@ namespace ArchitectureClean.Domain.Entities
 
         public Email Email { get; private set; } = default!;
 
-        public Senha Senha { get; private set; }
+        public Senha Senha { get; private set; } = default!;
 
         public Perfil Perfil { get; private set; } = Perfil.EST;
 
         public Status Status { get; private set; } = Status.IN;
 
-        public Abono Abono { get; private set; } = Abono.NJ;
-
-        public DateTime DataChegada { get; private set; } = DateTime.UtcNow;
-
-        public DateTime DataSaida { get; private set; } = DateTime.UtcNow;
-
-
-        public Estagiario(string nome ,Email email, Senha senha, Perfil perfil, Status status, Abono abono)
+        
+        public Estagiario(string nome ,Email email, Senha senha, Perfil perfil, Status status)
         {
-
             Id = Guid.NewGuid();
             Nome = nome;
             Email = email;
             Senha = senha;
-            Perfil = Perfil;
+            Perfil = perfil;
             Status = status;
-            Abono = abono;
-
         }
 
         public bool verfificarSenha(string senha) => Senha.Verificar(senha);
+
+        public ICollection<Frequencia> Frequencias { get; set; } = new List<Frequencia>();
     }
 }

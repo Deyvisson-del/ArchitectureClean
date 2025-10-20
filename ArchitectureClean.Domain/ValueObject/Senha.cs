@@ -6,7 +6,7 @@ namespace ArchitectureClean.Domain.ValueObject
 {
     public class Senha
     {
-        public string Hash { get; }
+        public string Hash { get; } = string.Empty;
 
         protected Senha() { }
 
@@ -38,7 +38,7 @@ namespace ArchitectureClean.Domain.ValueObject
             return Hash == hashVerficacao;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (obj is not Senha other)
                 return false;
