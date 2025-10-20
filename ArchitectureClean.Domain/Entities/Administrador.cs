@@ -9,15 +9,18 @@ public class Administrador
 
     public Guid Id { get; set; }
 
+    public string Nome { get; private set; } = string.Empty;
+
     public Email Email { get; private set; } = default!;
 
     public Senha Senha { get; private set; } = default!;
 
     public Perfil Perfil { get; private set; } = Perfil.ADM;
 
-    public Administrador( Email email, Senha senha, Perfil perfil)
+    public Administrador(string nome, Email email, Senha senha, Perfil perfil)
     {
         Id = Guid.NewGuid();
+        Nome = nome;
         Email = Email;
         Senha = Senha;
         Perfil = Perfil;
