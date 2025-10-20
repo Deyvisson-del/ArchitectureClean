@@ -11,6 +11,14 @@
 *.userprefs
 
 # Build results
+ArchitectureClean.Application/obj/
+ArchitectureClean.Application/bin/
+ArchitectureClean.Domain/obj/Debug/
+ArchitectureClean.Application/obj/Debug/
+ArchitectureClean.Infra.Data/obj/Debug/
+ArchitectureClean.Infra.IoC/obj/Debug/
+ArchitectureClean.MVC/obj/Debug/
+
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

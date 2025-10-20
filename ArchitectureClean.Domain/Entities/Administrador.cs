@@ -23,5 +23,5 @@ public class Administrador
         Perfil = Perfil;
     }
 
-    public bool verfificarSenha(Senha senha) => Senha.Verificar(senha);
+    public bool verfificarSenha(string senha) => Senha.Verificar(senha);
 }

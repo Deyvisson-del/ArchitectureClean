@@ -21,7 +21,7 @@ namespace ArchitectureClean.Domain.Entities
 
         public Email Email { get; private set; } = default!;
 
-        public Senha Senha { get; private set; };
+        public Senha Senha { get; private set; }
 
         public Perfil Perfil { get; private set; } = Perfil.EST;
 
@@ -47,6 +47,6 @@ namespace ArchitectureClean.Domain.Entities
 
         }
 
-        public bool verfificarSenha(Senha senha) => Senha.Verificar(senha);
+        public bool verfificarSenha(string senha) => Senha.Verificar(senha);
     }
 }

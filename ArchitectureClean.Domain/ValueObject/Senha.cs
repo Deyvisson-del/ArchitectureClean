@@ -6,7 +6,8 @@ namespace ArchitectureClean.Domain.ValueObject
 {
     public class Senha
     {
-        public string Hash { get; };
+        public string Hash { get; }
+
         protected Senha() { }
 
         public Senha(string senha)
@@ -31,16 +32,15 @@ namespace ArchitectureClean.Domain.ValueObject
             return Convert.ToBase64String(bytes);
         }
 
-        private bool Verificar(string senha)
+        public bool Verificar(string senha)
         {
             var hashVerficacao = GerarHash(senha);
             return Hash == hashVerficacao;
         }
 
-
-        public override bool Equals(object? obj)
+        public override bool Equals(object obj)
         {
-            if (!(obj is not Senha other)) 
+            if (obj is not Senha other)
                 return false;
 
             return Hash == other.Hash;
