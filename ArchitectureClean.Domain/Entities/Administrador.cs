@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using ArchitectureClean.Domain.Enuns;
 using ArchitectureClean.Domain.ValueObject;
 
@@ -21,10 +20,10 @@ public class Administrador
     {
         Id = Guid.NewGuid();
         Nome = nome;
-        Email = Email;
-        Senha = Senha;
-        Perfil = Perfil;
+        Email = email;
+        Senha = senha;
+        Perfil = perfil;
     }
 
-    public bool verificarSenha(string senha) => Senha.Verificar(senha);
+    public bool VerificarSenha(string senha) => Senha.Verificar(senha);
 }
