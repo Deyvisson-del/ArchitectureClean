@@ -10,4 +10,8 @@
     <ProjectReference Include="..\ArchitectureClean.Domain\ArchitectureClean.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Servicos\" />
+  </ItemGroup>
+
 </Project>
