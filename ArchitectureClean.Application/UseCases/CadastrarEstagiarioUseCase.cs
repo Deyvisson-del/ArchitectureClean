@@ -2,11 +2,6 @@
 using ArchitectureClean.Domain.Enuns;
 using ArchitectureClean.Domain.Interfaces;
 using ArchitectureClean.Domain.ValueObject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArchitectureClean.Application.UseCases
 {
