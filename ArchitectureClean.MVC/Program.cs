@@ -1,7 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using ArchitectureClean.Domain.Entities;
+using ArchitectureClean.Infra.IoC;
+using ArchitectureClean.Infra.IoC.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
