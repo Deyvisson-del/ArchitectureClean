@@ -1,5 +1,5 @@
-﻿using ArchitectureClean.Domain.Interfaces;
-using ArchitectureClean.Infra.IoC.Persistence;
+﻿using ArchitectureClean.Application.Interfaces;
+using ArchitectureClean.Infra.IoC.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ArchitectureClean.Infra.IoC

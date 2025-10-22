@@ -1,8 +1,9 @@
-﻿using ArchitectureClean.Domain.Entities;
-using ArchitectureClean.Domain.Interfaces;
+﻿using ArchitectureClean.Application.Interfaces;
+using ArchitectureClean.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using ArchitectureClean.Infra.IoC.Persistence; 
 
-namespace ArchitectureClean.Infra.IoC.Persistence
+namespace ArchitectureClean.Infra.IoC.Repositories
 {
     public class EstagiarioRepository : IEstagiarioRepository
     {
