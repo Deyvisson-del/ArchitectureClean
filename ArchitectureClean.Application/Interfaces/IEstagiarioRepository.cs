@@ -1,6 +1,6 @@
 ﻿using ArchitectureClean.Domain.Entities;
 
-namespace ArchitectureClean.Domain.Interfaces
+namespace ArchitectureClean.Application.Interfaces
 {
     public interface IEstagiarioRepository
     {
