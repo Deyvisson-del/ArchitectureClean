@@ -8,9 +8,9 @@ namespace ArchitectureClean.Infra.IoC.Repositories
     public class EstagiarioRepository : IEstagiarioRepository
     {
 
-        private readonly AppContext _context;
+        private readonly AppDbContext _context;
 
-        public EstagiarioRepository(AppContext context)
+        public EstagiarioRepository(AppDbContext context)
         {
             _context = context;
         }
