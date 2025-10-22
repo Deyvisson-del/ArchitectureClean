@@ -1,6 +1,6 @@
 ﻿using ArchitectureClean.Domain.Entities;
 using ArchitectureClean.Domain.Enuns;
-using ArchitectureClean.Domain.Interfaces;
+using ArchitectureClean.Application.Interfaces;
 using ArchitectureClean.Domain.ValueObject;
 
 namespace ArchitectureClean.Application.UseCases

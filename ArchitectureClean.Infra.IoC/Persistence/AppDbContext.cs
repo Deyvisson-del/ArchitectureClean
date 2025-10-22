@@ -14,7 +14,7 @@ namespace ArchitectureClean.Infra.IoC.Persistence
         {
         }
 
-        //public DbSet<Estagiario> Estagiarios { get; set; }
+        public DbSet<Estagiario> Estagiarios { get; set; }
         public DbSet<Administrador> Administradores { get; set; }
         //public DbSet<Frequencia> Frequencias { get; set; }
 
@@ -28,16 +28,16 @@ namespace ArchitectureClean.Infra.IoC.Persistence
 
 
 
-            //modelBuilder.Entity<Estagiario>(entity =>
-            //{
-            //    entity.ToTable("tb_Estagiarios");
-            //    entity.HasKey(e => e.Id);
-            //    entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
-            //    entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
-            //    entity.Property(e => e.Senha).IsRequired().HasMaxLength(16);
-            //    entity.Property(e => e.Perfil).IsRequired();
-            //    entity.Property(e => e.Status).IsRequired();
-            //});
+            modelBuilder.Entity<Estagiario>(entity =>
+            {
+                entity.ToTable("tb_Estagiarios");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Senha).IsRequired().HasMaxLength(16);
+                entity.Property(e => e.Perfil).IsRequired();
+                entity.Property(e => e.Status).IsRequired();
+            });
 
             modelBuilder.Entity<Administrador>(entity =>
             {
