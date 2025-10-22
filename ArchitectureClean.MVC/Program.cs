@@ -6,10 +6,16 @@ using ArchitectureClean.Infra.IoC.Persistence;
 var builder = WebApplication.CreateBuilder(args);
 
 
-
-string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
 // Add services to the container.
+
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+        )
+    );
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11116.177 d18.0
+VisualStudioVersion = 18.0.11116.177
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureClean.Domain", "ArchitectureClean.Domain\ArchitectureClean.Domain.csproj", "{4D6A19E9-EACD-4929-8501-6F7A5FF53276}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureClean.MVC", "ArchitectureClean.MVC\ArchitectureClean.MVC.csproj", "{337042FB-4BAE-400A-B35E-B6C357C059F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureClean.Infra.IoC", "ArchitectureClean.Infra.IoC\ArchitectureClean.Infra.IoC.csproj", "{D9C08F4B-5A70-4AE1-BBB0-AD1DB201461B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureClean.Infra.Data", "ArchitectureClean.Infra.Data\ArchitectureClean.Infra.Data.csproj", "{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,18 @@ Global
 		{D9C08F4B-5A70-4AE1-BBB0-AD1DB201461B}.Release|x64.Build.0 = Release|Any CPU
 		{D9C08F4B-5A70-4AE1-BBB0-AD1DB201461B}.Release|x86.ActiveCfg = Release|Any CPU
 		{D9C08F4B-5A70-4AE1-BBB0-AD1DB201461B}.Release|x86.Build.0 = Release|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Debug|x64.Build.0 = Debug|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Debug|x86.Build.0 = Debug|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|x64.ActiveCfg = Release|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|x64.Build.0 = Release|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|x86.ActiveCfg = Release|Any CPU
+		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
