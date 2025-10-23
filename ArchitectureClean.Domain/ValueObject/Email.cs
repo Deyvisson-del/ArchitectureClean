@@ -30,7 +30,7 @@ namespace ArchitectureClean.Domain.ValueObject
         }
 
         public override int GetHashCode() => Value.GetHashCode();
-       
+
 
     }
 }

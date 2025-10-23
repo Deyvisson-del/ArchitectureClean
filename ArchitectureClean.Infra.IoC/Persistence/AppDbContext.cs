@@ -64,15 +64,15 @@ namespace ArchitectureClean.Infra.IoC.Persistence
             //    entity.Property(e => e.Abono).IsRequired().HasMaxLength(50);
             //});
 
-             //modelBuilder.Entity<Administrador>().HasData(
-             //    new Administrador
-             //   {
-             //       Id = 1,
-             //       Nome = "Administrador",
-             //       Email = "adm@secti.com",
-             //       Senha = senhaHash,
-             //       Perfil = Domain.Enuns.Perfil.ADM
-             //   });
+            //modelBuilder.Entity<Administrador>().HasData(
+            //    new Administrador
+            //   {
+            //       Id = 1,
+            //       Nome = "Administrador",
+            //       Email = "adm@secti.com",
+            //       Senha = senhaHash,
+            //       Perfil = Domain.Enuns.Perfil.ADM
+            //   });
         }
 
         private static string CalcularHash(string input)

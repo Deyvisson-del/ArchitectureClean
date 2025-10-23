@@ -1,7 +1,7 @@
 ﻿using ArchitectureClean.Application.Interfaces;
 using ArchitectureClean.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using ArchitectureClean.Infra.IoC.Persistence; 
+using ArchitectureClean.Infra.IoC.Persistence;
 
 namespace ArchitectureClean.Infra.IoC.Repositories
 {
@@ -27,10 +27,10 @@ namespace ArchitectureClean.Infra.IoC.Repositories
 
         public async Task AtualizarAsync(Estagiario estagiario)
         {
-           _context.Estagiarios.Update(estagiario);
+            _context.Estagiarios.Update(estagiario);
             await _context.SaveChangesAsync();
         }
-       
+
         public async Task RemoverAsync(Estagiario estagiario)
         {
             _context.Estagiarios.Remove(estagiario);

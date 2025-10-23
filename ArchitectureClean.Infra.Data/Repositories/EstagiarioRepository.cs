@@ -27,10 +27,10 @@ namespace ArchitectureClean.Infra.Data.Repositories
 
         public async Task AtualizarAsync(Estagiario estagiario)
         {
-           _context.Estagiarios.Update(estagiario);
+            _context.Estagiarios.Update(estagiario);
             await _context.SaveChangesAsync();
         }
-       
+
         public async Task RemoverAsync(Estagiario estagiario)
         {
             _context.Estagiarios.Remove(estagiario);

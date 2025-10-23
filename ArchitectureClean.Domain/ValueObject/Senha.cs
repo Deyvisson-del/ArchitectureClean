@@ -21,7 +21,7 @@ namespace ArchitectureClean.Domain.ValueObject
             if (!Regex.IsMatch(senha, @"[!@#$%^&*(),.?""{}|<]")) throw new ArgumentException("A senha teve ter ao menos um caracter especial");
 
             if (!Regex.IsMatch(senha, @"[0-9]")) throw new ArgumentException("A senha teve conter ao menos um número");
-            
+
             Hash = GerarHash(senha);
         }
 
@@ -47,6 +47,6 @@ namespace ArchitectureClean.Domain.ValueObject
         }
 
         public override int GetHashCode() => Hash.GetHashCode();
-            
+
     }
 }
