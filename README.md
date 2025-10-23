@@ -1,5 +1,6 @@
-# Meu 1° Projeto em Clean Architecture (Em desenvolvimento...)
-## _Gerenciador de frequências de estagiários_
+# Meu 1ï¿½ Projeto em Clean Architecture (Em desenvolvimento...)
+## _Gerenciador de frequï¿½ncias de estagiï¿½rios_
+
 ## Configuration
 ## Stacks
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev) 
@@ -22,20 +23,20 @@
 ?? **ArchitectureClean.sln** </br>
 ?? ?? **ArchitectureClean.Domain** ? Entidades e interfaces  
 ?? ?? **ArchitectureClean.Application** ? Casos de uso e DTOs  
-?? ??? **ArchitectureClean.Infra.Data** ? DbContext e Repositórios  
+?? ??? **ArchitectureClean.Infra.Data** ? DbContext e Repositï¿½rios  
 ?  ?? Context ? `AppDbContext.cs`  
 ?  ?? Migrations  
 ?  ?? Repositories  
-?? ?? **ArchitectureClean.Infra.IoC** ? Configuração de DI  
+?? ?? **ArchitectureClean.Infra.IoC** ? Configuraï¿½ï¿½o de DI  
 ?  ?? `DependencyInjection.cs`  
-?? ?? **ArchitectureClean.MVC** ? Apresentação  
+?? ?? **ArchitectureClean.MVC** ? Apresentaï¿½ï¿½o  
    ?? `appsettings.json`  
    ?? `Program.cs`  
    ?? Controllers/
 
 
 
-## Instalação e Configuração
+## Instalaï¿½ï¿½o e Configuraï¿½ï¿½o
 ```sh
 git clone https://github.com/Deyvisson-del/ArchitectureClean.git
 
