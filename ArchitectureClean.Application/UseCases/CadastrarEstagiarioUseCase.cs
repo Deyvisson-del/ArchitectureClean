@@ -21,7 +21,7 @@ namespace ArchitectureClean.Application.UseCases
 
 
             var NovoEstagiario = new Estagiario(estagiarioDTO.Nome, estagiarioDTO.Email, estagiarioDTO.Senha, Perfil.EST, Status.AT);
-            await _estagiarioRepository.AdicionarAsync(NovoEstagiario);
+           await _estagiarioRepository.AdicionarAsync(NovoEstagiario);
         }
 
     }
