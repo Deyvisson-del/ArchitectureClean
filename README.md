@@ -1,6 +1,5 @@
-# Meu 1� Projeto em Clean Architecture (Em desenvolvimento...)
-## _Gerenciador de frequ�ncias de estagi�rios_
-
+# Meu 1° Projeto em Clean Architecture (Em desenvolvimento...)
+## _Gerenciador de frequências de estagiários_
 ## Configuration
 ## Stacks
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev) 
@@ -20,23 +19,23 @@
 
 ## Arquitetura do Projeto
 
-?? **ArchitectureClean.sln** </br>
-?? ?? **ArchitectureClean.Domain** ? Entidades e interfaces  
-?? ?? **ArchitectureClean.Application** ? Casos de uso e DTOs  
-?? ??? **ArchitectureClean.Infra.Data** ? DbContext e Reposit�rios  
-?  ?? Context ? `AppDbContext.cs`  
-?  ?? Migrations  
-?  ?? Repositories  
-?? ?? **ArchitectureClean.Infra.IoC** ? Configura��o de DI  
-?  ?? `DependencyInjection.cs`  
-?? ?? **ArchitectureClean.MVC** ? Apresenta��o  
-   ?? `appsettings.json`  
-   ?? `Program.cs`  
-   ?? Controllers/
+📁 **ArchitectureClean.sln** </br>
+├─ 🧩 **ArchitectureClean.Domain** → Entidades e interfaces  
+├─ 🧠 **ArchitectureClean.Application** → Casos de uso e DTOs  
+├─ 🗄️ **ArchitectureClean.Infra.Data** → DbContext e Repositórios  
+│  ├─ Context → `AppDbContext.cs`  
+│  ├─ Migrations  
+│  └─ Repositories  
+├─ ⚙️ **ArchitectureClean.Infra.IoC** → Configuração de DI  
+│  └─ `DependencyInjection.cs`  
+└─ 💻 **ArchitectureClean.MVC** → Apresentação  
+   ├─ `appsettings.json`  
+   ├─ `Program.cs`  
+   └─ Controllers/
 
 
 
-## Instala��o e Configura��o
+## Instalação e Configuração
 ```sh
 git clone https://github.com/Deyvisson-del/ArchitectureClean.git
 
