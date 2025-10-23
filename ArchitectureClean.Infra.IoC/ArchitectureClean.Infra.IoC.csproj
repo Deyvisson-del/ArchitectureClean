@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Repositories\.gitkeep" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ArchitectureClean.Application\ArchitectureClean.Application.csproj" />
     <ProjectReference Include="..\ArchitectureClean.Domain\ArchitectureClean.Domain.csproj" />
     <ProjectReference Include="..\ArchitectureClean.Infra.Data\ArchitectureClean.Infra.Data.csproj" />
