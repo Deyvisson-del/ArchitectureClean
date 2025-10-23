@@ -1,7 +1,7 @@
 ﻿using ArchitectureClean.Domain.Entities;
 using ArchitectureClean.Domain.Enuns;
-using ArchitectureClean.Application.Interfaces;
-using ArchitectureClean.Domain.ValueObject;
+using ArchitectureClean.Domain.Interfaces;
+using ArchitectureClean.Application.DTOs;
 
 namespace ArchitectureClean.Application.UseCases
 {
@@ -14,10 +14,15 @@ namespace ArchitectureClean.Application.UseCases
             _estagiarioRepository = estagiarioRepository;
         }
 
-        public async Task Execute(string nome, string email, string senha)
+        public async Task ExecuteAsync(EstagiarioDTO estagiarioDTO)
         {
-            var estagiario = new Estagiario(nome, new Email(email), new Senha(senha), Perfil.EST, Status.AT);
-            await _estagiarioRepository.AdicionarAsync(estagiario);
+            var EstagiarioExistente = await _estagiarioRepository.ObterPorIdAsync(estagiarioDTO.Id);
+            if (EstagiarioExistente != null) throw new Exception("Estagiário já cadastrado.");
+
+
+            var NovoEstagiario = new Estagiario(estagiarioDTO.Nome, estagiarioDTO.Email, estagiarioDTO.Senha, Perfil.EST, Status.AT);
+            await _estagiarioRepository.AdicionarAsync(NovoEstagiario);
         }
+
     }
 }
