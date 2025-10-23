@@ -6,6 +6,6 @@ namespace ArchitectureClean.Domain.Enuns
         [Description("Ativo")] AT,
         [Description("Inativo")] IN,
         [Description("Suspenso")] SP,
- 
+
     }
 }

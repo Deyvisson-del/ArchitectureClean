@@ -18,7 +18,7 @@ namespace ArchitectureClean.Infra.Data.Context
 
             modelBuilder.Entity<Estagiario>(entity =>
             {
-                entity.ToTable("tb_Estagiarios");
+
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
@@ -29,7 +29,7 @@ namespace ArchitectureClean.Infra.Data.Context
 
             modelBuilder.Entity<Administrador>(entity =>
             {
-                entity.ToTable("tb_Administradores");
+
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Email).IsRequired().HasMaxLength(60);
@@ -39,7 +39,7 @@ namespace ArchitectureClean.Infra.Data.Context
 
             modelBuilder.Entity<Frequencia>(entity =>
             {
-                entity.ToTable("tb_Frequencias");
+
                 entity.HasKey(e => e.Id);
                 entity.HasOne(e => e.Estagiario)
                       .WithMany()
@@ -51,7 +51,7 @@ namespace ArchitectureClean.Infra.Data.Context
                 entity.Property(e => e.HoraSaida).IsRequired();
                 entity.Property(e => e.Abono).IsRequired().HasMaxLength(50);
             });
-          
+
         }
 
     }

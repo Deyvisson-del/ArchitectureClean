@@ -4,7 +4,7 @@ namespace ArchitectureClean.Domain.Enuns
 {
     public enum Perfil
     {
-        [Description("Administrador")] ADM, 
-        [Description("Estagiário")] EST, 
+        [Description("Administrador")] ADM,
+        [Description("Estagiário")] EST,
     }
 }
