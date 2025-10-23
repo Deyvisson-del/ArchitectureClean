@@ -297,7 +297,7 @@ obj/
 
 # Built Visual Studio Code Extensions
 *.vsix
-.github/
+
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
