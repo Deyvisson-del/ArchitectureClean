@@ -1,20 +1,19 @@
-﻿using ArchitectureClean.Application.Interfaces;
-using ArchitectureClean.Infra.IoC.Persistence;
+﻿using ArchitectureClean.Application.UseCases;
+using ArchitectureClean.Domain.Interfaces;
 using ArchitectureClean.Infra.IoC.Repositories;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ArchitectureClean.Infra.IoC
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddInfraIoC(this IServiceCollection services)
-        {
-            services.AddDbContext<AppDbContext>(options =>
-                options.UseMySql("server=127.0.0.1;port=3366;uid=rootpwd=root;database=DB_CleanArch;", ServerVersion.AutoDetect("server=127.0.0.1;port=3366;uid=rootpwd=root;database=DB_CleanArch;")));
 
+        public static IServiceCollection AddInfraestructure(this IServiceCollection services)
+        {
             services.AddScoped<IEstagiarioRepository, EstagiarioRepository>();
+            services.AddScoped<CadastrarEstagiarioUseCase>();
             return services;
         }
+
     }
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureClean.Infra.IoC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureClean.Infra.Data", "ArchitectureClean.Infra.Data\ArchitectureClean.Infra.Data.csproj", "{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureClean.Tests", "ArchitectureClean.Tests\ArchitectureClean.Tests.csproj", "{268396AC-76AF-464C-801F-0DDC7DD7581C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|x64.Build.0 = Release|Any CPU
 		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|x86.ActiveCfg = Release|Any CPU
 		{7424B9C3-A01F-93E7-96D8-C29EE8A6058F}.Release|x86.Build.0 = Release|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Debug|x64.Build.0 = Debug|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Debug|x86.Build.0 = Debug|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Release|x64.ActiveCfg = Release|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Release|x64.Build.0 = Release|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Release|x86.ActiveCfg = Release|Any CPU
+		{268396AC-76AF-464C-801F-0DDC7DD7581C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
