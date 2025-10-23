@@ -1,9 +1,9 @@
-﻿using ArchitectureClean.Application.Interfaces;
-using ArchitectureClean.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using ArchitectureClean.Domain.Entities;
+using ArchitectureClean.Domain.Interfaces;
 using ArchitectureClean.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
-namespace ArchitectureClean.Infra.Data.Repositories
+namespace ArchitectureClean.Infra.IoC.Repositories
 {
     public class EstagiarioRepository : IEstagiarioRepository
     {
@@ -14,7 +14,6 @@ namespace ArchitectureClean.Infra.Data.Repositories
         {
             _context = context;
         }
-
 
         public async Task<IEnumerable<Estagiario>> ListarAsync() => await _context.Estagiarios.ToListAsync();
 
@@ -36,5 +35,13 @@ namespace ArchitectureClean.Infra.Data.Repositories
             _context.Estagiarios.Remove(estagiario);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<Estagiario>> ListarPorNomeAsync(string nome)
+        {
+            return await _context.Estagiarios
+                .Where(e => e.Nome.Contains(nome))
+                .ToListAsync();
+        }
+
     }
 }
