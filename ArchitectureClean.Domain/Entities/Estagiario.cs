@@ -31,8 +31,8 @@ namespace ArchitectureClean.Domain.Entities
             Status = status;
         }
 
-        public bool verfificarSenha(string senha) => Senha.Verificar(senha);
+        public bool VerificarSenha(string senha) => Senha.Verificar(senha);
 
-        public ICollection<Frequencia> Frequencias { get; set; } = new List<Frequencia>();
+        public virtual ICollection<Frequencia> Frequencias { get; set; } = new List<Frequencia>();
     }
 }
