@@ -2,8 +2,8 @@ namespace ArchitectureClean.Domain.Entities
 {
     public class Frequencia
     {
-        public Guid Id { get; set; }
-        public Guid EstagiarioId { get; set; }
+        public Guid Id { get; private set; }
+        public Guid EstagiarioId { get; private set; }
         public DateTime DataChegada { get; private set; } = DateTime.UtcNow;
         public DateTime DataSaida { get; private set; } = DateTime.UtcNow;
         public TimeSpan HoraChegada { get; private set; } = TimeSpan.Zero;
