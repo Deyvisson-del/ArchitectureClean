@@ -48,5 +48,7 @@ namespace ArchitectureClean.Domain.ValueObject
 
         public override int GetHashCode() => Hash.GetHashCode();
 
+        public static implicit operator Senha(string value)
+       => new Senha(value);
     }
 }
