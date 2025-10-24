@@ -1,4 +1,4 @@
-﻿using ArchitectureClean.Infra.IoC.Persistence;
+﻿using ArchitectureClean.Infra.Data.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArchitectureClean.MVC.Controllers

@@ -22,7 +22,7 @@ namespace ArchitectureClean.Domain.Entities
             Abono = abono;
         }
 
-        public Estagiario Estagiario { get; set; } = default!;
+        public virtual Estagiario Estagiario { get; set; } = default!;
     }
 
 }

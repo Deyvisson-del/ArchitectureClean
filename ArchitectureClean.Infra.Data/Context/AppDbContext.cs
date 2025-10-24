@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ArchitectureClean.Domain.Entities;
+using ArchitectureClean.Domain.ValueObject;
 
 namespace ArchitectureClean.Infra.Data.Context
 {
@@ -21,19 +22,29 @@ namespace ArchitectureClean.Infra.Data.Context
 
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Senha).IsRequired().HasMaxLength(16);
+                entity.Property(e => e.Email).IsRequired().HasMaxLength(100)
+                .HasConversion(
+                    email => email.Value,
+                    value => new Email(value)); ;
+                entity.Property(e => e.Senha).IsRequired().HasMaxLength(16).HasConversion(
+                    email => email.Hash,
+                    value => new Senha(value)); ;
                 entity.Property(e => e.Perfil).IsRequired();
                 entity.Property(e => e.Status).IsRequired();
             });
+             
 
             modelBuilder.Entity<Administrador>(entity =>
             {
-
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Email).IsRequired().HasMaxLength(60);
-                entity.Property(e => e.Senha).IsRequired().HasMaxLength(16);
+                entity.Property(e => e.Email).IsRequired().HasMaxLength(60)
+                .HasConversion(
+                    email => email.Value,
+                    value => new Email(value));
+                entity.Property(e => e.Senha).IsRequired().HasMaxLength(16).HasConversion(
+                    email => email.Hash,
+                    value => new Senha(value));
                 entity.Property(e => e.Perfil).IsRequired();
             });
 
