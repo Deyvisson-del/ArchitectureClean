@@ -32,10 +32,10 @@ namespace ArchitectureClean.Infra.Data.Context
                 entity.Property(e => e.Perfil).IsRequired();
                 entity.Property(e => e.Status).IsRequired();
             });
+             
 
             modelBuilder.Entity<Administrador>(entity =>
             {
-
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Email).IsRequired().HasMaxLength(60)
