@@ -32,6 +32,7 @@ namespace ArchitectureClean.Domain.ValueObject
 
         public override int GetHashCode() => Value.GetHashCode();
 
-
+        public static implicit operator Email(string value)
+       => new Email(value);
     }
 }
