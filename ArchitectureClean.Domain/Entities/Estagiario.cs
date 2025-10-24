@@ -9,7 +9,7 @@ namespace ArchitectureClean.Domain.Entities
     public class Estagiario
     {
 
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
         public string Nome { get; private set; } = string.Empty;
 
@@ -31,8 +31,7 @@ namespace ArchitectureClean.Domain.Entities
             Status = status;
         }
 
-        public bool verfificarSenha(string senha) => Senha.Verificar(senha);
+        public bool VerificarSenha(string senha) => Senha.Verificar(senha);
 
-        public ICollection<Frequencia> Frequencias { get; set; } = new List<Frequencia>();
     }
 }

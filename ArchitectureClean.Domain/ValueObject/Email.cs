@@ -16,6 +16,7 @@ namespace ArchitectureClean.Domain.ValueObject
                 throw new ArgumentException("E-mail inválido.");
 
             Value = value.ToLower().Trim();
+            Value = Convert.ToBase64String(Encoding.UTF8.GetBytes(Value));
         }
 
         public override string ToString() => Value;
@@ -31,6 +32,7 @@ namespace ArchitectureClean.Domain.ValueObject
 
         public override int GetHashCode() => Value.GetHashCode();
 
-
+        public static implicit operator Email(string value)
+       => new Email(value);
     }
 }

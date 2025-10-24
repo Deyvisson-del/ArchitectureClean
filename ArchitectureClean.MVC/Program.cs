@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ArchitectureClean.Domain.Entities;
 using ArchitectureClean.Infra.IoC;
-using ArchitectureClean.Infra.IoC.Persistence;
+using ArchitectureClean.Infra.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
-        )
+        new MySqlServerVersion(new Version(8, 0, 42)))
+
     );
 
 builder.Services.AddControllersWithViews();

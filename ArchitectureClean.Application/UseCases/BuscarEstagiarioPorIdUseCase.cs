@@ -5,7 +5,7 @@ namespace ArchitectureClean.Application.UseCases
     public class BuscarEstagiarioPorIdUseCase
     {
         private readonly IEstagiarioRepository _estagiarioRepository;
-       
+
         public BuscarEstagiarioPorIdUseCase(IEstagiarioRepository estagiarioRepository)
         {
             _estagiarioRepository = estagiarioRepository;
