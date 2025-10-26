@@ -36,7 +36,7 @@ namespace ArchitectureClean.Infra.Data.Context
 
 
 
-            modelBuilder.Entity<Administrador>(entity => 
+            modelBuilder.Entity<Administrador>(entity =>
             {
                 entity.HasKey(e => e.Id);
 
@@ -53,7 +53,7 @@ namespace ArchitectureClean.Infra.Data.Context
                 entity.OwnsOne(a => a.Senha, ownedNavigationBuilder =>
                 {
                     ownedNavigationBuilder.Property(s => s.Hash)
-                        .HasColumnName("SenhaHash") 
+                        .HasColumnName("SenhaHash")
                         .IsRequired()
                         .HasMaxLength(255);
                 });
@@ -86,7 +86,7 @@ namespace ArchitectureClean.Infra.Data.Context
                 entity.Property(e => e.Abono).IsRequired().HasMaxLength(50);
             });
 
-           
+
         }
 
     }
