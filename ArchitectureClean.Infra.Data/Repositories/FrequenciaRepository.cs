@@ -8,6 +8,12 @@ namespace ArchitectureClean.Infra.Data.Repositories
     public class FrequenciaRepository : IFrequenciaRepository
     {
         private readonly AppDbContext _context;
+     
+        public FrequenciaRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public Task AdicionarAsync(Frequencia frequencia)
         {
             _context.Frequencias.Add(frequencia);
