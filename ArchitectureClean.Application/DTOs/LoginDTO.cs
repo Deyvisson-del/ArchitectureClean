@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ArchitectureClean.Domain.ValueObject;
 
 namespace ArchitectureClean.Application.DTOs
 {
     public class LoginDTO
     {
 
-
+        public Email email { get; set; } = default!;
+        public Senha senha { get; set; } = default!;
 
     }
 }
