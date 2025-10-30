@@ -1,4 +1,4 @@
-using ArchitectureClean.MVC.Models;
+using ArchitectureClean.Infra.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

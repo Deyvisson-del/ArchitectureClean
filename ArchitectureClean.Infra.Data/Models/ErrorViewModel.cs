@@ -1,4 +1,4 @@
-namespace ArchitectureClean.MVC.Models
+namespace ArchitectureClean.Infra.Data.Models
 {
     public class ErrorViewModel
     {
