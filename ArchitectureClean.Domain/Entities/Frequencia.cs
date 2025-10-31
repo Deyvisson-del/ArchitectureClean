@@ -1,3 +1,16 @@
+#region Documentation
+/// <sumary>
+/// Entity Frequencia
+/// </sumary>
+/// <param name="Id"> ID Frequencia</param>
+/// <param name="EstagiarioId"> ID Estagiario</param>
+/// <param name="DataChegada"> Data de Chegada</param>
+/// <param name="DataSaida"> Data de Saída</param>
+/// <param name="HoraChegada"> Hora de Chegada</param>
+/// <param name="HoraSaida"> Hora de Saída</param>
+/// <param name="Abono"> Abono</param>
+#endregion 
+
 namespace ArchitectureClean.Domain.Entities
 {
     public class Frequencia

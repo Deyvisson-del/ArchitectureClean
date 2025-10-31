@@ -1,4 +1,16 @@
-﻿#region Usings
+﻿#region Documentation
+/// <sumary>
+/// Entity Estagiario
+/// </sumary>
+/// <param name="Id"> ID Estagiario</param>
+/// <param name="Nome"> Nome do Estagiario</param>"
+/// <param name="Email">Email</param>
+/// <param name="Senha">Senha</param>
+/// <param name="Perfil">Perfil</param>
+/// <param name="Status">Status</param>
+#endregion
+
+#region Usings
 using ArchitectureClean.Domain.Enuns;
 using ArchitectureClean.Domain.ValueObject;
 #endregion
