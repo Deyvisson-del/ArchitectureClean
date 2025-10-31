@@ -25,10 +25,5 @@ public class Administrador
         Perfil = perfil;
     }
 
-    public Administrador()
-    {
-
-    }
-
     public bool VerificarSenha(string senha) => Senha.Verificar(senha);
 }
