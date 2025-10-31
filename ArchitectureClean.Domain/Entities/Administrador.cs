@@ -1,5 +1,18 @@
+#region Documentation
+/// <sumary>
+/// Entity Adminmistrador
+/// </sumary>
+/// <param name="Id"> ID Estagiario</param>
+/// <param name="Nome"> Nome do Estagiario</param>"
+/// <param name="Email">Email</param>
+/// <param name="Senha">Senha</param>
+/// <param name="Perfil">Perfil</param>
+#endregion
+
+#region Usings
 using ArchitectureClean.Domain.Enuns;
 using ArchitectureClean.Domain.ValueObject;
+#endregion
 
 namespace ArchitectureClean.Domain.Entities;
 
