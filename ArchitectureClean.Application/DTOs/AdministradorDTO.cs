@@ -7,12 +7,21 @@ namespace ArchitectureClean.Application.DTOs
     {
         public Guid Id { get; set; }
 
-        public string Nome { get; private set; } = string.Empty;
+        public string Nome { get; private set; } 
 
-        public Email Email { get; private set; } = default!;
+        public Email Email { get; private set; }
 
-        public Senha Senha { get; private set; } = default!;
+        public Senha Senha { get; private set; } 
 
-        public Perfil Perfil { get; private set; } = Perfil.ADM;
+        public Perfil Perfil { get; private set; }
+
+        public AdministradorDTO(Guid ID, string nome, string email, string senha, Perfil perfil)
+        {
+            Id = Guid.NewGuid();
+            Nome = nome;
+            Email = email;
+            Senha = senha;
+            Perfil = perfil;
+        }
     }
 }

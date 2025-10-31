@@ -5,8 +5,13 @@ namespace ArchitectureClean.Application.DTOs
     public class LoginDTO
     {
 
-        public Email email { get; set; } = default!;
-        public Senha senha { get; set; } = default!;
+        public Email Email { get; set; } 
+        public Senha Senha { get; set; }
 
+        public LoginDTO(Email email, Senha senha)
+        {
+            Email = email;
+            Senha = senha;
+        }
     }
 }
