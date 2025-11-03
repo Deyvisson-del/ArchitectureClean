@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ArchitectureClean.Domain\ArchitectureClean.Domain.csproj" />
+    <Compile Remove="Servicos\**" />
+    <EmbeddedResource Remove="Servicos\**" />
+    <None Remove="Servicos\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Servicos\" />
+    <ProjectReference Include="..\ArchitectureClean.Domain\ArchitectureClean.Domain.csproj" />
   </ItemGroup>
 
 </Project>
