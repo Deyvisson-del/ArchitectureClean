@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ArchitectureClean.Infra.IoC
+namespace ArchitectureClean.Infra.Data
 {
     public static class DependencyInjection
     {
@@ -19,6 +19,8 @@ namespace ArchitectureClean.Infra.IoC
 
             services.AddScoped<IEstagiarioRepository, EstagiarioRepository>();
             services.AddScoped<CadastrarEstagiarioUseCase>();
+
+
             return services;
         }
 

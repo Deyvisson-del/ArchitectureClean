@@ -61,15 +61,6 @@ namespace ArchitectureClean.Infra.Data.Context
 
                 entity.Property(e => e.Perfil).IsRequired();
             });
-            //modelBuilder.Entity<Administrador>(entity =>
-            //new Administrador
-            //{
-            //    Id = Guid.Parse("a1b2c3d4-e5f6-7890-abcd-ef1234567890"),
-            //    Nome = "Admin Master",
-            //    Email = new Email("adminmaster@gmail.com"), 
-            //    Senha = new Senha("Admin@123"), 
-            //    Perfil = Perfil.ADM
-            //});
 
             modelBuilder.Entity<Frequencia>(entity =>
             {
